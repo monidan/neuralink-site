@@ -1,3 +1,33 @@
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0.05;
+    transform: translateX(-20%);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0.05;
+    transform: translateX(20%);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeInTop {
+  0% {
+    opacity: 0.05;
+    transform: translateY(-20%);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 body {
   padding: 0;
   margin: 0;
@@ -29,6 +59,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  animation: fadeInRight 1.5s ease-in-out;
 }
 .neuralink-header__navigation-menu ul li {
   margin: 0.3rem 0;
@@ -51,6 +82,7 @@ body {
 .neuralink-header__introduction-text {
   font-size: 2.5rem;
   color: white;
+  animation: fadeInLeft 1.5s ease-in-out;
 }
 .neuralink-header__introduction-text h1 {
   font-weight: 400 !important;
@@ -69,6 +101,7 @@ body {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
+  animation: fadeInLeft 1.5s ease-in-out;
 }
 .neuralink-header__suggestions > div > a .neuralink-header__arrow {
   padding-left: 0.15rem;
@@ -85,6 +118,7 @@ body {
   height: 2px;
   background-color: white;
   position: absolute;
+  animation: fadeInTop 1.5s ease-in-out;
 }
 
 /*# sourceMappingURL=main.css.map */
